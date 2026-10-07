@@ -1,0 +1,86 @@
+/* ===== Clarity Cosplay Rental - Trang chủ khách thuê (Figma 3:6) ===== */
+:root{
+  --bg:#faf9f6; --surface:#fdfdfb; --border:#e4e0d8;
+  --brown:#6b4a32; --gold:#b08d57; --text:#2e2a25; --muted:#6b5e53;
+  --ok-bg:#f3f7f4; --ok:#2e5b3d; --bad-bg:#faf2f2; --bad:#7a2e2e;
+  --serif:'Merriweather',serif; --sans:'Inter',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:normal}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.ico{display:block;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.container{max-width:1440px;margin:0 auto;background:var(--bg)}
+.divider{height:1px;background:var(--border)}
+.section{padding:80px}
+
+/* typography helpers */
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold)}
+.eyebrow--brown{color:var(--brown)}
+.h2{font-family:var(--serif);font-weight:700;font-size:32px;color:var(--text)}
+.section-head{display:flex;flex-direction:column;gap:12px}
+
+/* ===== Header ===== */
+.header__content{display:flex;align-items:center;justify-content:space-between;padding:20px 80px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo__mark{width:36px;height:36px;border-radius:6px;background:var(--brown);color:var(--bg);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700;font-size:20px}
+.logo__text{display:flex;flex-direction:column;gap:2px}
+.logo__title{font-family:var(--serif);font-weight:700;font-size:20px}
+.logo__sub{font-size:10px;font-weight:600;letter-spacing:.2px;text-transform:uppercase;color:var(--gold)}
+.nav-search{display:flex;align-items:center;gap:40px}
+.search{width:320px;display:flex;align-items:center;gap:10px;padding:10px 16px;background:var(--surface);border:1px solid var(--border);border-radius:6px;color:var(--brown)}
+.search input{flex:1;min-width:0;border:0;outline:0;background:transparent;font:400 13px var(--sans);color:var(--text)}
+.search input::placeholder{color:var(--muted)}
+.nav{display:flex;gap:24px;font-size:14px;white-space:nowrap}
+.nav a{font-weight:500;color:var(--muted);transition:color .2s}
+.nav a:hover{color:var(--brown)}
+.nav a.active{font-weight:700;color:var(--brown)}
+.actions{display:flex;align-items:center;gap:20px}
+.cart{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:500;white-space:nowrap}
+.cart__icon{display:flex;align-items:center;gap:6px}
+.cart__count{padding:2px 6px;border-radius:100px;background:var(--gold);color:var(--bg);font-size:11px;font-weight:700}
+.actions__line{width:1px;height:20px;background:var(--border)}
+.auth{display:flex;align-items:center;gap:16px}
+.auth__login{font-size:14px;font-weight:500;white-space:nowrap}
+
+/* ===== Buttons ===== */
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:6px;font-family:var(--sans);font-weight:600;white-space:nowrap;cursor:pointer;transition:opacity .2s,background .2s,color .2s}
+.btn--primary{background:var(--brown);color:var(--bg);border:0}
+.btn--primary:hover{opacity:.9}
+.btn--outline{background:transparent;color:var(--text);border:1.5px solid var(--text)}
+.btn--outline:hover{background:var(--text);color:var(--bg)}
+.btn--sm{padding:8px 16px;font-size:13px}
+.btn--lg{padding:16px 32px;font-size:15px}
+.btn--lg.btn--outline{padding:16px 24px}
+
+/* ===== Footer ===== */
+.footer{background:var(--surface);border-top:1px solid var(--border)}
+.footer__content{display:flex;justify-content:space-between;padding:64px 80px}
+.footer__brand{width:320px;display:flex;flex-direction:column;gap:20px}
+.footer__logo{display:flex;align-items:center;gap:12px;font-family:var(--serif);font-weight:700;font-size:18px}
+.footer__logo .logo__mark{width:32px;height:32px;font-size:18px}
+.footer__brand p{font-size:14px;line-height:1.5;color:var(--muted)}
+.footer__col{width:200px;display:flex;flex-direction:column;gap:16px}
+.footer__col--contact{width:280px}
+.footer__col h4{font-family:var(--serif);font-weight:700;font-size:16px}
+.footer__col ul{list-style:none;display:flex;flex-direction:column;gap:10px;font-size:14px;color:var(--muted)}
+.footer__col ul a:hover{color:var(--brown)}
+.contact{display:flex;flex-direction:column;gap:12px;font-size:14px;color:var(--muted)}
+.contact div{display:flex;align-items:center;gap:10px}
+.footer__bottom{display:flex;align-items:center;justify-content:space-between;padding:24px 80px;border-top:1px solid var(--border);font-size:13px;color:var(--muted)}
+.socials{display:flex;gap:16px;color:var(--muted)}
+.socials a:hover{color:var(--brown)}
+
+/* ===== Responsive (header / footer / chung) ===== */
+@media (max-width:1200px){
+  .section{padding:56px 40px}
+  .header__content,.footer__content,.footer__bottom{padding-left:40px;padding-right:40px}
+  .nav-search{gap:20px}.search{width:220px}
+  .footer__content{flex-wrap:wrap;gap:40px}
+}
+@media (max-width:720px){
+  .header__content{flex-wrap:wrap;gap:16px}
+  .nav,.cart__label{display:none}
+  .nav-search{order:3;width:100%}.search{width:100%}
+  .footer__bottom{flex-direction:column;gap:16px;text-align:center}
+}
