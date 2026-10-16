@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>
+   Quản lý Đơn thuê &amp; Giao dịch | CLARITY Cosplay Rental
+  </title>
+<link href="../assets/img/favicon.svg" rel="icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Merriweather:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="../assets/css/common.css" rel="stylesheet"/>
+<link href="../assets/css/admin-rental-detail.css" rel="stylesheet"/>
+<link href="../assets/css/responsive.css" rel="stylesheet"/>
+<link href="../assets/css/layout.css" rel="stylesheet"/>
+<link href="../assets/css/application.css" rel="stylesheet"/></head>
+<body data-group="admin" data-page="admin-rental-detail">
+<a class="skip-link" href="#main-content">
+   Chuyển đến nội dung chính
+  </a>
+<main class="screen">
+<div class="n209 container-main backoffice-layout r-node r-wide r-row r-mobile-stack">
+<aside class="review-sidebar" id="workspace-menu">
+<a aria-label="CLARITY - Trang chủ" class="review-brand" href="../index.html">
+<span class="review-brand__mark">
+       C
+      </span>
+<span class="review-brand__text">
+<b>
+        CLARITY
+       </b>
+<small>
+        Cosplay Rental
+       </small>
+</span>
+</a>
+<div class="review-sidebar__role">
+      Quản trị viên
+     </div>
+<nav aria-label="Quản trị viên">
+<a href="admin-users.html">
+<svg aria-hidden="true" fill="none" height="17" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="17">
+<rect height="16" rx="4" width="16" x="4" y="4">
+</rect>
+<path d="M8 9h8M8 13h8M8 17h4">
+</path>
+</svg>
+<span>
+        Người dùng
+       </span>
+</a>
+<a href="admin-staff.html">
+<svg aria-hidden="true" fill="none" height="17" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="17">
+<rect height="16" rx="4" width="16" x="4" y="4">
+</rect>
+<path d="M8 9h8M8 13h8M8 17h4">
+</path>
+</svg>
+<span>
+        Nhân viên
+       </span>
+</a>
+<a href="admin-products.html">
+<svg aria-hidden="true" fill="none" height="17" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="17">
+<rect height="16" rx="4" width="16" x="4" y="4">
+</rect>
+<path d="M8 9h8M8 13h8M8 17h4">
+</path>
+</svg>
+<span>
+        Sản phẩm
+       </span>
+</a>
+<a aria-current="page" href="admin-rentals.html">
+<svg aria-hidden="true" fill="none" height="17" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="17">
+<rect height="16" rx="4" width="16" x="4" y="4">
+</rect>
+<path d="M8 9h8M8 13h8M8 17h4">
+</path>
+</svg>
+<span>
+        Đơn thuê &amp; giao dịch
+       </span>
+</a>
+<a href="admin-disputes.html">
+<svg aria-hidden="true" fill="none" height="17" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="17">
+<rect height="16" rx="4" width="16" x="4" y="4">
+</rect>
+<path d="M8 9h8M8 13h8M8 17h4">
+</path>
+</svg>
+<span>
+        Tranh chấp
+       </span>
+</a>
+<a href="admin-dashboard.html">
+<svg aria-hidden="true" fill="none" height="17" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="17">
+<rect height="16" rx="4" width="16" x="4" y="4">
+</rect>
+<path d="M8 9h8M8 13h8M8 17h4">
+</path>
+</svg>
+<span>
+        Thống kê
+       </span>
+</a>
+<a href="admin-settings.html">
+<svg aria-hidden="true" fill="none" height="17" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="17">
+<rect height="16" rx="4" width="16" x="4" y="4">
+</rect>
+<path d="M8 9h8M8 13h8M8 17h4">
+</path>
+</svg>
+<span>
+        Hệ thống
+       </span>
+</a>
+<div class="review-sidebar__bottom">
+<a href="../index.html">
+<svg aria-hidden="true" fill="none" height="17" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="17">
+<rect height="16" rx="4" width="16" x="4" y="4">
+</rect>
+<path d="M8 9h8M8 13h8M8 17h4">
+</path>
+</svg>
+<span>
+         Trang chủ
+        </span>
+</a>
+
+</div>
+</nav>
+</aside>
+<div class="n208 content-main review-workspace r-node r-wide r-col">
+<header class="workspace-header">
+<button aria-controls="workspace-menu" aria-expanded="false" aria-label="Menu" class="menu-toggle" data-menu="workspace-menu" type="button">
+<svg aria-hidden="true" fill="none" height="22" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24" width="22">
+<path d="M4 6h16M4 12h16M4 18h16">
+</path>
+</svg>
+</button>
+<h1>
+       Quản lý Đơn thuê &amp; Giao dịch
+      </h1>
+<span class="workspace-meta">
+       Quản trị viên
+      </span>
+</header>
+<div class="n207 body-with-drawer workspace-body r-node r-wide" id="main-content" tabindex="-1">
+<div class="n169 left-section r-node r-wide absolute-reflow">
+<div class="n54 title-block card r-node r-wide absolute-reflow">
+<div class="n52 breadcrumbs r-node absolute-reflow">
+<p class="n49 r-text">
+          Back Office
+         </p>
+<p class="n50 r-text">
+          Đơn thuê &amp; giao dịch
+         </p>
+<span class="n51 icon">
+<svg aria-hidden="true" class="ico" height="10" viewbox="0 0 24 24" width="10">
+<circle cx="12" cy="12" r="9">
+</circle>
+</svg>
+</span>
+</div>
+<p class="n53 r-text">
+         Giám sát đơn hàng &amp; Luồng tài chính
+        </p>
+</div>
+<div class="n123 rental-orders-section r-node r-wide absolute-reflow">
+<div class="n63 section-header r-node r-wide absolute-reflow">
+<div class="n61 filters r-node absolute-reflow">
+<div class="n57 filter-status r-node absolute-reflow">
+<p class="n55 r-text">
+            Trạng thái: Tất cả sự cố
+           </p>
+<span class="n56 icon">
+<svg aria-hidden="true" class="ico" height="10" viewbox="0 0 24 24" width="10">
+<circle cx="12" cy="12" r="9">
+</circle>
+</svg>
+</span>
+</div>
+<div class="n60 filter-search r-node absolute-reflow">
+<input aria-label="Mã đơn, tên khách..." class="n58 r-text" data-table-search="" id="field-1" name="field-1" placeholder="Mã đơn, tên khách..." type="search"/>
+<span class="n59 icon">
+<svg aria-hidden="true" class="ico" height="12" viewbox="0 0 24 24" width="12">
+<circle cx="12" cy="12" r="9">
+</circle>
+</svg>
+</span>
+</div>
+</div>
+<p class="n62 r-text">
+          Xem tất cả đơn thuê toàn hệ thống
+         </p>
+</div>
+<div aria-label="Bảng có thể cuộn ngang trên màn hình nhỏ." class="table-scroll" role="region" tabindex="0">
+<div class="n122 table-box card review-table" style=";--table-width:1080px;">
+<div class="n71 table-head absolute-table-row">
+<p class="n64">
+            MÃ ĐƠN
+           </p>
+<p class="n65">
+            TRANG PHỤC COSPLAY
+           </p>
+<p class="n66">
+            NGƯỜI THUÊ
+           </p>
+<p class="n67">
+            CHỦ ĐỒ
+           </p>
+<p class="n68">
+            CHI PHÍ
+           </p>
+<p class="n69">
+            TRẠNG THÁI
+           </p>
+<p class="n70">
+            HÀNH ĐỘNG
+           </p>
+</div>
+<div class="n85 order-row-ord-2026-8801 absolute-table-row">
+<div class="n76 actions">
+<button class="n73 btn-detail review-button" type="button">
+<p class="n72">
+              Chi tiết
+             </p>
+</button>
+<button class="n75 btn-intervene review-button" type="button">
+<p class="n74">
+              Can thiệp sự cố
+             </p>
+</button>
+</div>
+<div class="n79 frame">
+<div class="n78 status-badge badge badge-bad">
+<p class="n77">
+              Gặp sự cố / Trả muộn
+             </p>
+</div>
+</div>
+<p class="n80">
+            ORD-2026-8801
+           </p>
+<p class="n81">
+            Cosplay Raiden Shogun - Genshin Impact
+           </p>
+<p class="n82">
+            Phạm Văn Minh
+           </p>
+<p class="n83">
+            Trần Thị Mai
+           </p>
+<p class="n84">
+            250,000đ
+           </p>
+</div>
+<div class="n97 order-row-ord-2026-8802 absolute-table-row">
+<div class="n88 actions">
+<button class="n87 btn-detail review-button" type="button">
+<p class="n86">
+              Chi tiết
+             </p>
+</button>
+</div>
+<div class="n91 frame">
+<div class="n90 status-badge badge badge-warn">
+<p class="n89">
+              Đang kiểm tra sau trả
+             </p>
+</div>
+</div>
+<p class="n92">
+            ORD-2026-8802
+           </p>
+<p class="n93">
+            Cosplay Arthur Pendragon - Fate/Grand Order
+           </p>
+<p class="n94">
+            Lê Nguyễn Anh Tuấn
+           </p>
+<p class="n95">
+            Hoàng Anh Tuấn
+           </p>
+<p class="n96">
+            320,000đ
+           </p>
+</div>
+<div class="n109 order-row-ord-2026-8803 absolute-table-row">
+<div class="n100 actions">
+<button class="n99 btn-detail review-button" type="button">
+<p class="n98">
+              Chi tiết
+             </p>
+</button>
+</div>
+<div class="n103 frame">
+<div class="n102 status-badge badge badge-bad">
+<p class="n101">
+              Đang thuê
+             </p>
+</div>
+</div>
+<p class="n104">
+            ORD-2026-8803
+           </p>
+<p class="n105">
+            Cosplay Hatsune Miku Sakura Version
+           </p>
+<p class="n106">
+            Đỗ Thị Quỳnh
+           </p>
+<p class="n107">
+            Vũ Phương Ly
+           </p>
+<p class="n108">
+            180,000đ
+           </p>
+</div>
+<div class="n121 order-row-ord-2026-8804 absolute-table-row">
+<div class="n112 actions">
+<button class="n111 btn-detail review-button" type="button">
+<p class="n110">
+              Chi tiết
+             </p>
+</button>
+</div>
+<div class="n115 frame">
+<div class="n114 status-badge badge badge-ok">
+<p class="n113">
+              Hoàn thành
+             </p>
+</div>
+</div>
+<p class="n116">
+            ORD-2026-8804
+           </p>
+<p class="n117">
+            Cosplay Gojo Satoru - Jujutsu Kaisen
+           </p>
+<p class="n118">
+            Trương Minh Triết
+           </p>
+<p class="n119">
+            Phạm Minh Đức
+           </p>
+<p class="n120">
+            120,000đ
+           </p>
+</div>
+</div>
+</div>
+<p class="table-hint">
+         Bảng có thể cuộn ngang trên màn hình nhỏ.
+        </p>
+</div>
+<div class="n124 r-node r-wide r-visual">
+</div>
+<div class="n168 transactions-section r-node r-wide absolute-reflow">
+<p class="n125 r-text">
+         Theo dõi giao dịch qua cổng thanh toán
+        </p>
+<div class="n167 transactions-layout r-node r-wide absolute-reflow">
+<div class="n154 trans-table-box card r-node r-wide absolute-reflow">
+<div class="n132 table-head r-node r-wide absolute-table-row absolute-reflow">
+<p class="n126 r-text">
+            MÃ GD
+           </p>
+<p class="n127 r-text">
+            MÃ ĐƠN
+           </p>
+<p class="n128 r-text">
+            SỐ TIỀN
+           </p>
+<p class="n129 r-text">
+            LOẠI GIAO DỊCH
+           </p>
+<p class="n130 r-text">
+            CỔNG
+           </p>
+<p class="n131 r-text">
+            THỜI GIAN
+           </p>
+</div>
+<div class="n139 tx-row-tx-99812 r-node r-wide absolute-table-row absolute-reflow">
+<p class="n133 r-text">
+            TX-99812
+           </p>
+<p class="n134 r-text">
+            ORD-2026-8801
+           </p>
+<p class="n135 r-text">
+            550,000đ
+           </p>
+<p class="n136 r-text">
+            Thanh toán cọc &amp; thuê
+           </p>
+<p class="n137 r-text">
+            VNPAY
+           </p>
+<p class="n138 r-text">
+            24/10/2026
+           </p>
+</div>
+<div class="n146 tx-row-tx-99813 r-node r-wide absolute-table-row absolute-reflow">
+<p class="n140 r-text">
+            TX-99813
+           </p>
+<p class="n141 r-text">
+            ORD-2026-8802
+           </p>
+<p class="n142 r-text">
+            720,000đ
+           </p>
+<p class="n143 r-text">
+            Thanh toán cọc &amp; thuê
+           </p>
+<p class="n144 r-text">
+            Momo
+           </p>
+<p class="n145 r-text">
+            24/10/2026
+           </p>
+</div>
+<div class="n153 tx-row-tx-99814 r-node r-wide absolute-table-row absolute-reflow">
+<p class="n147 r-text">
+            TX-99814
+           </p>
+<p class="n148 r-text">
+            ORD-2026-8801
+           </p>
+<p class="n149 r-text">
+            200,000đ
+           </p>
+<p class="n150 r-text">
+            Bồi thường sự cố
+           </p>
+<p class="n151 r-text">
+            Ví hệ thống
+           </p>
+<p class="n152 r-text">
+            25/10/2026
+           </p>
+</div>
+</div>
+<div class="n166 abnormal-check-card card r-node absolute-reflow">
+<div class="n157 card-title-area r-node absolute-reflow">
+<p class="n155 r-text">
+            Kiểm tra giao dịch bất thường
+           </p>
+<span class="n156 icon">
+<svg aria-hidden="true" class="ico" height="16" viewbox="0 0 24 24" width="16">
+<circle cx="12" cy="12" r="9">
+</circle>
+</svg>
+</span>
+</div>
+<div class="n163 abnormal-detail r-node absolute-reflow">
+<p class="n158 r-text">
+            Phát hiện giao dịch bồi thường TX-99814 có phát sinh chênh lệch ngoài hệ thống. Cần Admin kiểm tra thông tin đối soát ngân hàng.
+           </p>
+<div class="n162 field-highlight field r-node absolute-reflow">
+<p class="n159 r-text">
+             GIAO DỊCH NGHI VẤN
+            </p>
+<p class="n160 r-text">
+             200,000đ - Ví hệ thống
+            </p>
+<p class="n161 r-text">
+             Đơn hàng liên quan: ORD-2026-8801
+            </p>
+</div>
+</div>
+<button class="n165 btn-mark-check r-node review-button" type="button">
+<p class="n164 r-text">
+            Đánh dấu kiểm tra
+           </p>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="n206 right-section-intervention r-node absolute-reflow">
+<div class="n175 drawer-header r-node absolute-reflow">
+<p class="n170 r-text">
+         Can thiệp đơn thuê có sự cố
+        </p>
+<div class="n174 frame r-node absolute-reflow">
+<p class="n171 r-text">
+          ĐƠN HÀNG: ORD-2026-8801
+         </p>
+<p class="n172 r-text">
+          Khách thuê: Phạm Văn Minh
+         </p>
+<p class="n173 r-text">
+          Trang phục: Raiden Shogun - Genshin Impact
+         </p>
+</div>
+</div>
+<div class="n198 intervention-actions r-node absolute-reflow">
+<p class="n176 r-text">
+         Chọn hình thức can thiệp hệ thống
+        </p>
+<div class="n183 action-pills r-node absolute-reflow">
+<div class="n178 pill-huy r-node absolute-reflow">
+<p class="n177 r-text">
+           Hủy đơn cưỡng chế
+          </p>
+</div>
+<div class="n180 pill-hoan r-node absolute-reflow">
+<p class="n179 r-text">
+           Hoàn tiền cọc
+          </p>
+</div>
+<div class="n182 pill-trangthai r-node absolute-reflow">
+<p class="n181 r-text">
+           Thay đổi trạng thái
+          </p>
+</div>
+</div>
+<div class="n195 form-fields r-node absolute-reflow">
+<div class="n188 form-group r-node absolute-reflow">
+<p class="n184 r-text">
+           GÁN STAFF XỬ LÝ TRỰC TIẾP
+          </p>
+<div class="n187 select-staff r-node absolute-reflow">
+<p class="n185 r-text">
+            Staff Nguyễn Minh Anh (STF-882)
+           </p>
+<span class="n186 icon">
+<svg aria-hidden="true" class="ico" height="12" viewbox="0 0 24 24" width="12">
+<circle cx="12" cy="12" r="9">
+</circle>
+</svg>
+</span>
+</div>
+</div>
+<div class="n194 form-group r-node absolute-reflow">
+<div class="n191 frame r-node absolute-reflow">
+<p class="n189 r-text">
+            LÝ DO CAN THIỆP BẮT BUỘC
+           </p>
+<p class="n190 r-text">
+            *
+           </p>
+</div>
+<div class="n193 reason-input input r-node absolute-reflow">
+<input aria-label="Khách báo hỏng khóa khóa kéo trang phục nặng, chủ đồ yêu cầu đền bù cọc nhưng thương lượng bất thành. Admin can thiệp xử lý cưỡng chế hoàn cọc 50%." class="n192 r-text" id="field-2" name="field-2" placeholder="Khách báo hỏng khóa khóa kéo trang phục nặng, chủ đồ yêu cầu đền bù cọc nhưng thương lượng bất thành. Admin can thiệp xử lý cưỡng chế hoàn cọc 50%." type="text"/>
+</div>
+</div>
+</div>
+<button class="n197 btn-approve-submit r-node review-button" type="button">
+<p class="n196 r-text">
+          Xác nhận can thiệp hệ thống
+         </p>
+</button>
+</div>
+<div class="n199 r-node r-visual">
+</div>
+<div class="n205 staff-logs r-node absolute-reflow">
+<p class="n200 r-text">
+         Nhật ký ghi nhận hệ thống
+        </p>
+<div class="n204 log-item r-node absolute-reflow">
+<p class="n201 r-text">
+          Staff Nguyễn Minh Anh
+         </p>
+<p class="n202 r-text">
+          Báo cáo sự cố: Trang phục hư hại nặng phần tà áo sau khi nhận trả.
+         </p>
+<p class="n203 r-text">
+          14:20 - 24/10/2026
+         </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<button aria-label="Đóng" class="sidebar-overlay" tabindex="-1" type="button">
+</button>
+<script defer="True" src="../assets/js/ui.js">
+</script>
+<script defer="" src="../assets/js/messages.js"></script><script defer="" src="../assets/js/api-client.js"></script><script defer="" src="../assets/js/page-handlers.js"></script></body>
+</html>

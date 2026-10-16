@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>
+   Tìm kiếm trang phục | CLARITY Cosplay Rental
+  </title>
+<link href="../assets/img/favicon.svg" rel="icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Merriweather:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="../assets/css/common.css" rel="stylesheet"/>
+<link href="../assets/css/products.css" rel="stylesheet"/>
+<link href="../assets/css/responsive.css" rel="stylesheet"/>
+<link href="../assets/css/layout.css" rel="stylesheet"/>
+<link href="../assets/css/application.css" rel="stylesheet"/></head>
+<body data-group="customer" data-live="true" data-page="products">
+<a class="skip-link" href="#main-content">
+   Chuyển đến nội dung chính
+  </a>
+<header class="review-header">
+<div class="review-header__inner">
+<a aria-label="CLARITY - Trang chủ" class="review-brand" href="../index.html">
+<span class="review-brand__mark">
+      C
+     </span>
+<span class="review-brand__text">
+<b>
+       CLARITY
+      </b>
+<small>
+       Cosplay Rental
+      </small>
+</span>
+</a>
+<button aria-controls="public-menu" aria-expanded="false" aria-label="Menu" class="menu-toggle" data-menu="public-menu" type="button">
+<svg aria-hidden="true" fill="none" height="22" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24" width="22">
+<path d="M4 6h16M4 12h16M4 18h16">
+</path>
+</svg>
+</button>
+<nav aria-label="Menu" class="review-nav" id="public-menu">
+<a href="../index.html">
+      Trang chủ
+     </a>
+<a aria-current="page" href="products.html">
+      Trang phục
+     </a>
+<a href="rental-guide.html">
+      Hướng dẫn thuê
+     </a>
+<a href="service-policy.html">
+      Chính sách
+     </a>
+</nav>
+<form action="products.html" class="header-search" method="get" role="search">
+<input aria-label="Tìm trang phục, nhân vật..." id="field-1" maxlength="120" name="q" placeholder="Tìm trang phục, nhân vật..." type="search"/>
+<button aria-label="Tìm trang phục, nhân vật..." type="submit">
+<svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24" width="18">
+<circle cx="10.5" cy="10.5" r="7">
+</circle>
+<path d="m16 16 5 5">
+</path>
+</svg>
+</button>
+</form>
+<div class="review-actions">
+<a href="login.html">
+      Đăng nhập
+     </a>
+<a class="review-signup" href="register.html">
+      Đăng ký
+     </a>
+</div>
+</div>
+</header>
+<main class="catalog-page" id="main-content" tabindex="-1">
+<div class="catalog-heading">
+<h1>
+     Tìm kiếm trang phục cosplay
+    </h1>
+<p>
+     Khám phá trang phục, nhân vật và series yêu thích.
+    </p>
+<div class="live-alert error" hidden="" id="page-error" role="alert"></div></div>
+<form class="catalog-search" id="catalog-search">
+<input aria-label="Tìm trang phục, nhân vật..." class="review-input" id="catalog-query" maxlength="120" name="catalog-query" placeholder="Tìm trang phục, nhân vật..." type="search"/>
+<button class="review-button primary" type="submit">
+     Tìm kiếm
+    </button>
+</form>
+<div class="catalog-layout">
+<aside aria-label="Bộ lọc tìm kiếm" class="catalog-filter">
+<h2>
+      Bộ lọc tìm kiếm
+     </h2>
+<div class="form-field">
+<label for="filter-category">
+       Danh mục
+      </label>
+<select class="review-input" id="filter-category" name="filter-category">
+<option value="">
+        Tất cả
+       </option>
+<option value="anime">
+        Anime &amp; Manga
+       </option>
+<option value="game">
+        Game
+       </option>
+<option value="phim">
+        Phim &amp; Series
+       </option>
+<option value="vocaloid">
+        Vocaloid/Idol
+       </option>
+<option value="scifi">
+        Sci-fi/Fantasy
+       </option>
+<option value="lolita">
+        Lolita/Kimono
+       </option>
+<option value="wig">
+        Wig &amp; Phụ kiện &amp; Props
+       </option>
+</select>
+</div>
+<div class="form-field">
+<label for="filter-series">
+       Series
+      </label>
+<select class="review-input" id="filter-series" name="filter-series">
+<option value="">
+        Tất cả series
+       </option>
+<option>
+        Genshin Impact
+       </option>
+<option>
+        Demon Slayer
+       </option>
+<option>
+        Jujutsu Kaisen
+       </option>
+<option>
+        Honkai: Star Rail
+       </option>
+<option>
+        Vocaloid
+       </option>
+<option>
+        Marvel
+       </option>
+</select>
+</div>
+<div class="form-field">
+<label for="filter-price">
+       Giá thuê / ngày
+      </label>
+<select class="review-input" id="filter-price" name="filter-price">
+<option value="">
+        Tất cả mức giá
+       </option>
+<option value="150000">
+        Đến 150.000đ
+       </option>
+<option value="250000">
+        Đến 250.000đ
+       </option>
+<option value="500000">
+        Đến 500.000đ
+       </option>
+</select>
+</div>
+<label class="form-check">
+<input id="filter-available" name="filter-available" type="checkbox"/>
+<span>Có số lượng trong kho (chưa kiểm tra lịch)</span>
+</label>
+<button class="review-button" id="clear-filters" type="button">
+      Xóa tất cả bộ lọc
+     </button>
+</aside>
+<section>
+<div class="catalog-toolbar">
+<p aria-live="polite" id="catalog-count">Đang tải danh sách từ database...</p>
+<select aria-label="Sắp xếp theo giá" class="review-input" id="catalog-sort" name="catalog-sort">
+<option value="default">
+        Thứ tự mặc định
+       </option>
+<option value="asc">
+        Giá tăng dần
+       </option>
+<option value="desc">
+        Giá giảm dần
+       </option>
+</select>
+</div>
+<div class="catalog-grid"></div>
+<div class="catalog-empty" hidden="" id="catalog-empty">
+<h2>
+       Không tìm thấy trang phục phù hợp
+      </h2>
+<p>
+       Hãy thử từ khóa khác hoặc xóa bộ lọc.
+      </p>
+</div>
+<p class="catalog-note">Giá và trang phục lấy từ database. Mở chi tiết để kiểm tra lịch cụ thể.</p>
+</section>
+</div>
+</main>
+<footer class="review-footer">
+<div class="review-footer__inner">
+<div>
+<a aria-label="CLARITY - Trang chủ" class="review-brand" href="../index.html">
+<span class="review-brand__mark">
+       C
+      </span>
+<span class="review-brand__text">
+<b>
+        CLARITY
+       </b>
+<small>
+        Cosplay Rental
+       </small>
+</span>
+</a>
+<p>
+      Nền tảng chia sẻ và cho thuê trang phục cosplay cao cấp hàng đầu Việt Nam. Kết nối cosplayer khắp mọi miền, chia sẻ đam mê bền vững và tiết kiệm.
+     </p>
+</div>
+<div>
+<h2>
+      CLARITY
+     </h2>
+<div class="review-footer__links">
+<a href="products.html">
+       Trang phục
+      </a>
+<a href="service-policy.html">
+       Chính sách
+      </a>
+<a href="account.html">
+       Tài khoản
+      </a>
+</div>
+</div>
+<div>
+<h2>
+      Hỗ trợ &amp; hướng dẫn
+     </h2>
+<div class="review-footer__links">
+<a href="rental-guide.html">
+       Hướng dẫn thuê
+      </a>
+<a href="support-center.html">
+       Trung tâm hỗ trợ
+      </a>
+<a href="messages.html">
+       Tin nhắn
+      </a>
+</div>
+</div>
+</div>
+<div class="review-footer__bottom">© 2026 CLARITY Cosplay Rental</div>
+</footer>
+<script defer="True" src="../assets/js/ui.js">
+</script>
+<script defer="" src="../assets/js/messages.js"></script><script defer="" src="../assets/js/api-client.js"></script><script defer="" src="../assets/js/page-handlers.js"></script></body>
+</html>
