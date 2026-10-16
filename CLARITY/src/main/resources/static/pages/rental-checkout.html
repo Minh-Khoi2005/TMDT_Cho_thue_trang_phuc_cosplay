@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Giỏ hàng &amp; đặt thuê | CLARITY Cosplay Rental</title>
+<link href="../assets/img/favicon.svg" rel="icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Merriweather:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="../assets/css/common.css" rel="stylesheet"/>
+<link href="../assets/css/responsive.css" rel="stylesheet"/>
+<link href="../assets/css/layout.css" rel="stylesheet"/>
+<link href="../assets/css/application.css" rel="stylesheet"/></head>
+<body class="live-body" data-group="public" data-live="true" data-page="rental-checkout">
+<a class="skip-link" href="#main-content">
+   Chuyển đến nội dung chính
+  </a>
+<header class="review-header">
+<div class="review-header__inner">
+<a aria-label="CLARITY - Trang chủ" class="review-brand" href="../index.html">
+<span class="review-brand__mark">
+      C
+     </span>
+<span class="review-brand__text">
+<b>
+       CLARITY
+      </b>
+<small>
+       Cosplay Rental
+      </small>
+</span>
+</a>
+<button aria-controls="public-menu" aria-expanded="false" aria-label="Menu" class="menu-toggle" data-menu="public-menu" type="button">
+<svg aria-hidden="true" fill="none" height="22" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24" width="22">
+<path d="M4 6h16M4 12h16M4 18h16">
+</path>
+</svg>
+</button>
+<nav aria-label="Menu" class="review-nav" id="public-menu">
+<a href="../index.html">
+      Trang chủ
+     </a>
+<a href="products.html">
+      Trang phục
+     </a>
+<a href="rental-guide.html">
+      Hướng dẫn thuê
+     </a>
+<a href="service-policy.html">
+      Chính sách
+     </a>
+</nav>
+<form action="products.html" class="header-search" method="get" role="search">
+<input aria-label="Tìm trang phục, nhân vật..." id="field-1" maxlength="120" name="q" placeholder="Tìm trang phục, nhân vật..." type="search"/>
+<button aria-label="Tìm trang phục, nhân vật..." type="submit">
+<svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24" width="18">
+<circle cx="10.5" cy="10.5" r="7">
+</circle>
+<path d="m16 16 5 5">
+</path>
+</svg>
+</button>
+</form>
+<div class="review-actions">
+<a href="login.html">
+      Đăng nhập
+     </a>
+<a class="review-signup" href="register.html">
+      Đăng ký
+     </a>
+</div>
+</div>
+</header>
+<main class="live-page" id="main-content" tabindex="-1">
+<div class="live-heading"><div><span class="eyebrow">CLARITY / ĐẶT THUÊ</span><h1>Giỏ hàng của bạn</h1><p>Chọn lịch phù hợp. Kiểm tra chi phí. Lưu đơn thuê.</p></div><a class="review-button" href="products.html">Tiếp tục chọn đồ</a></div>
+<div aria-label="Tiến trình" class="live-steps"><span>01 · Chọn trang phục</span><b>02 · Giỏ &amp; đặt thuê</b><span>03 · Theo dõi đơn</span></div>
+<div class="live-alert error" hidden="" id="page-error" role="alert"></div>
+<div class="live-empty" id="cart-loading" role="status">Đang tải giỏ hàng từ database...</div>
+<div class="live-empty" hidden="" id="cart-empty"><h2>Giỏ hàng đang trống</h2><p>Chọn trang phục và lịch thuê để bắt đầu.</p><a class="review-button primary" href="products.html">Khám phá trang phục</a></div>
+<div class="live-checkout" hidden="" id="checkout-layout">
+<div><section class="live-card"><div class="live-section-title"><h2>Trang phục đã chọn</h2><span class="live-pill" id="cart-units"></span></div><p class="live-muted">Giỏ hàng chưa giữ lịch. Số lượng được kiểm tra lại khi tạo đơn.</p><div id="cart-items"></div></section>
+<section class="live-card"><h2>Thông tin nhận trang phục</h2>
+<form id="checkout-form"><div class="live-field-grid"><div class="form-field"><label for="recipient-name">Họ và tên</label><input autocomplete="name" class="review-input" id="recipient-name" maxlength="100" name="recipientName" required=""/></div><div class="form-field"><label for="recipient-phone">Số điện thoại</label><input autocomplete="tel" class="review-input" id="recipient-phone" maxlength="20" name="recipientPhone" pattern="(0[35789][0-9]{8}|\+84[35789][0-9]{8})" placeholder="0900000001" required="" type="tel"/></div></div>
+<div class="form-field"><label for="order-note">Ghi chú cho shop (không bắt buộc)</label><textarea class="review-input" id="order-note" maxlength="500" name="note" placeholder="Giờ dự kiến đến nhận, yêu cầu đồng kiểm..." rows="3"></textarea></div>
+<div class="live-method"><b>Nhận và thanh toán tại shop</b><p>Nhận trực tiếp tại từng shop có trang phục trong đơn.</p></div>
+<label class="form-check live-terms"><input id="accept-terms" name="acceptTerms" required="" type="checkbox"/><span>Tôi đã kiểm tra trang phục, kích cỡ, lịch thuê và đồng ý <a href="rental-rules.html" rel="noopener" target="_blank">quy tắc đặt thuê</a>.</span></label>
+</form></section></div>
+<aside class="live-card live-summary"><span class="eyebrow">TỔNG QUAN ĐƠN THUÊ</span><h2>Chi phí dự kiến</h2><div class="live-money-row"><span>Tiền thuê</span><b id="summary-rental">...</b></div><div class="live-money-row"><span>Tiền đặt cọc</span><b id="summary-deposit">...</b></div><div class="live-money-row total"><span>Tổng giá trị</span><strong id="summary-total">...</strong></div><p class="live-muted">Tiền cọc tính một lần cho mỗi bộ, không nhân theo số ngày.</p><div class="live-alert warning" hidden="" id="cart-problems"></div><button class="review-button primary full-width" form="checkout-form" id="create-order" type="submit">Tạo đơn thuê</button><p class="live-footnote" id="hold-note"></p><p class="live-footnote">Thao tác này lưu đơn vào database, không trừ tiền tài khoản.</p></aside>
+</div>
+</main>
+<footer class="review-footer">
+<div class="review-footer__inner">
+<div>
+<a aria-label="CLARITY - Trang chủ" class="review-brand" href="../index.html">
+<span class="review-brand__mark">
+       C
+      </span>
+<span class="review-brand__text">
+<b>
+        CLARITY
+       </b>
+<small>
+        Cosplay Rental
+       </small>
+</span>
+</a>
+<p>
+      Nền tảng chia sẻ và cho thuê trang phục cosplay cao cấp hàng đầu Việt Nam. Kết nối cosplayer khắp mọi miền, chia sẻ đam mê bền vững và tiết kiệm.
+     </p>
+</div>
+<div>
+<h2>
+      CLARITY
+     </h2>
+<div class="review-footer__links">
+<a href="products.html">
+       Trang phục
+      </a>
+<a href="service-policy.html">
+       Chính sách
+      </a>
+<a href="account.html">
+       Tài khoản
+      </a>
+</div>
+</div>
+<div>
+<h2>
+      Hỗ trợ &amp; hướng dẫn
+     </h2>
+<div class="review-footer__links">
+<a href="rental-guide.html">
+       Hướng dẫn thuê
+      </a>
+<a href="support-center.html">
+       Trung tâm hỗ trợ
+      </a>
+<a href="messages.html">
+       Tin nhắn
+      </a>
+</div>
+</div>
+</div>
+<div class="review-footer__bottom">© 2026 CLARITY Cosplay Rental</div>
+</footer>
+<script defer="True" src="../assets/js/ui.js">
+</script>
+<script defer="" src="../assets/js/messages.js"></script><script defer="" src="../assets/js/api-client.js"></script><script defer="" src="../assets/js/page-handlers.js"></script></body>
+</html>

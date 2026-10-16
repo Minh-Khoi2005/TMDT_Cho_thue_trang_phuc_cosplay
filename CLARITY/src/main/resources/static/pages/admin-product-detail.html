@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>
+   Quản lý Sản phẩm Cosplay | CLARITY Cosplay Rental
+  </title>
+<link href="../assets/img/favicon.svg" rel="icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Merriweather:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="../assets/css/common.css" rel="stylesheet"/>
+<link href="../assets/css/admin-product-detail.css" rel="stylesheet"/>
+<link href="../assets/css/responsive.css" rel="stylesheet"/>
+<link href="../assets/css/layout.css" rel="stylesheet"/>
+<link href="../assets/css/application.css" rel="stylesheet"/></head>
+<body data-group="admin" data-page="admin-product-detail">
+<a class="skip-link" href="#main-content">
+   Chuyển đến nội dung chính
+  </a>
+<main class="screen">
+<div class="n213 r-node r-wide r-top">
+<div class="n181 container-main backoffice-layout r-node r-wide r-row r-mobile-stack">
+<aside class="review-sidebar" id="workspace-menu">
+<a aria-label="CLARITY - Trang chủ" class="review-brand" href="../index.html">
+<span class="review-brand__mark">
+        C
+       </span>
+<span class="review-brand__text">
+<b>
+         CLARITY
+        </b>
+<small>
+         Cosplay Rental
+        </small>
+</span>
+</a>
+<div class="review-sidebar__role">
+       Quản trị viên
+      </div>
+<nav aria-label="Quản trị viên">
+<a href="admin-users.html">
+<svg aria-hidden="true" fill="none" height="17" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="17">
+<rect height="16" rx="4" width="16" x="4" y="4">
+</rect>
+<path d="M8 9h8M8 13h8M8 17h4">
+</path>
+</svg>
+<span>
+         Người dùng
+        </span>
+</a>
+<a href="admin-staff.html">
+<svg aria-hidden="true" fill="none" height="17" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="17">
+<rect height="16" rx="4" width="16" x="4" y="4">
+</rect>
+<path d="M8 9h8M8 13h8M8 17h4">
+</path>
+</svg>
+<span>
+         Nhân viên
+        </span>
+</a>
+<a aria-current="page" href="admin-products.html">
+<svg aria-hidden="true" fill="none" height="17" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="17">
+<rect height="16" rx="4" width="16" x="4" y="4">
+</rect>
+<path d="M8 9h8M8 13h8M8 17h4">
+</path>
+</svg>
+<span>
+         Sản phẩm
+        </span>
+</a>
+<a href="admin-rentals.html">
+<svg aria-hidden="true" fill="none" height="17" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="17">
+<rect height="16" rx="4" width="16" x="4" y="4">
+</rect>
+<path d="M8 9h8M8 13h8M8 17h4">
+</path>
+</svg>
+<span>
+         Đơn thuê &amp; giao dịch
+        </span>
+</a>
+<a href="admin-disputes.html">
+<svg aria-hidden="true" fill="none" height="17" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="17">
+<rect height="16" rx="4" width="16" x="4" y="4">
+</rect>
+<path d="M8 9h8M8 13h8M8 17h4">
+</path>
+</svg>
+<span>
+         Tranh chấp
+        </span>
+</a>
+<a href="admin-dashboard.html">
+<svg aria-hidden="true" fill="none" height="17" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="17">
+<rect height="16" rx="4" width="16" x="4" y="4">
+</rect>
+<path d="M8 9h8M8 13h8M8 17h4">
+</path>
+</svg>
+<span>
+         Thống kê
+        </span>
+</a>
+<a href="admin-settings.html">
+<svg aria-hidden="true" fill="none" height="17" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="17">
+<rect height="16" rx="4" width="16" x="4" y="4">
+</rect>
+<path d="M8 9h8M8 13h8M8 17h4">
+</path>
+</svg>
+<span>
+         Hệ thống
+        </span>
+</a>
+<div class="review-sidebar__bottom">
+<a href="../index.html">
+<svg aria-hidden="true" fill="none" height="17" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24" width="17">
+<rect height="16" rx="4" width="16" x="4" y="4">
+</rect>
+<path d="M8 9h8M8 13h8M8 17h4">
+</path>
+</svg>
+<span>
+          Trang chủ
+         </span>
+</a>
+
+</div>
+</nav>
+</aside>
+<div class="n180 content-main review-workspace r-node r-wide r-col">
+<header class="workspace-header">
+<button aria-controls="workspace-menu" aria-expanded="false" aria-label="Menu" class="menu-toggle" data-menu="workspace-menu" type="button">
+<svg aria-hidden="true" fill="none" height="22" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24" width="22">
+<path d="M4 6h16M4 12h16M4 18h16">
+</path>
+</svg>
+</button>
+<h1>
+        Quản lý Sản phẩm Cosplay
+       </h1>
+<span class="workspace-meta">
+        Quản trị viên
+       </span>
+</header>
+<div class="n179 body workspace-body r-node r-wide r-col" id="main-content" tabindex="-1">
+<div class="n54 title-block card r-node r-wide r-col r-card r-center" style=";--r-offset:40px;">
+<div class="n52 breadcrumbs r-node r-row">
+<p class="n49 r-text">
+          Back Office
+         </p>
+<span class="n50 icon" style=";--r-offset:6px;">
+<svg aria-hidden="true" class="ico" height="10" viewbox="0 0 24 24" width="10">
+<path d="m9 18 6-6-6-6">
+</path>
+</svg>
+</span>
+<p class="n51 r-text" style=";--r-offset:6px;">
+          Sản phẩm
+         </p>
+</div>
+<p class="n53 r-text">
+         Danh sách sản phẩm hệ thống
+        </p>
+</div>
+<div class="n178 split-layout r-node r-wide r-row r-stack r-mobile-stack r-center" style=";--r-offset:40px;">
+<div class="n134 left-section r-node r-wide r-col">
+<div class="n65 category-tabs r-node r-wide r-row r-mobile-stack">
+<div class="n56 tab-0 r-node r-col">
+<p class="n55 r-text r-center" style=";--r-offset:16px;">
+            Tất cả
+           </p>
+</div>
+<div class="n58 tab-1 r-node r-col" style=";--r-offset:8px;">
+<p class="n57 r-text r-center" style=";--r-offset:16px;">
+            Chờ kiểm duyệt
+           </p>
+</div>
+<div class="n60 tab-2 r-node r-col" style=";--r-offset:8px;">
+<p class="n59 r-text r-center" style=";--r-offset:16px;">
+            Đang hoạt động
+           </p>
+</div>
+<div class="n62 tab-3 r-node r-col" style=";--r-offset:8px;">
+<p class="n61 r-text r-center" style=";--r-offset:16px;">
+            Bị từ chối
+           </p>
+</div>
+<div class="n64 tab-4 r-node r-col" style=";--r-offset:8px;">
+<p class="n63 r-text r-center" style=";--r-offset:16px;">
+            Bị gắn cờ
+           </p>
+</div>
+</div>
+<div class="n72 filters-card card r-node r-wide r-row r-mobile-stack">
+<div class="n67 filter-search r-node r-col r-small-offset" style=";--r-offset:16px;">
+<input aria-label="Tìm tên sản phẩm..." class="n66 r-text r-small-offset" data-table-search="" id="field-1" name="field-1" placeholder="Tìm tên sản phẩm..." type="search"/>
+</div>
+<div class="n69 filter-category r-node r-col" style=";--r-offset:8px;">
+<p class="n68 r-text r-center" style=";--r-offset:16px;">
+            Danh mục: Tất cả
+           </p>
+</div>
+<div class="n71 filter-status r-node r-col" style=";--r-offset:8px;">
+<p class="n70 r-text r-small-offset" style=";--r-offset:16px;">
+            Trạng thái: Bị gắn cờ
+           </p>
+</div>
+</div>
+<div aria-label="Bảng có thể cuộn ngang trên màn hình nhỏ." class="table-scroll" role="region" tabindex="0">
+<div class="n133 table-box card review-table" style=";--table-width:636px;">
+<div class="n84 product-row-cos-2026-0412">
+<div class="n77 col-product">
+<img alt="Hình minh họa" class="n73" decoding="async" loading="lazy" src="../assets/img/ui/thumb-02.svg"/>
+<div class="n76 frame">
+<p class="n74">
+               Cosplay Raiden Shogun - Genshin Impact
+              </p>
+<p class="n75">
+               COS-2026-0412
+              </p>
+</div>
+</div>
+<p class="n78">
+             Game / Genshin Impact
+            </p>
+<p class="n79">
+             Trần Thị Mai
+            </p>
+<p class="n80">
+             250,000đ / ngày
+            </p>
+<div class="n83 frame">
+<div class="n82 status-badge badge badge-neutral">
+<p class="n81">
+               Bị báo cáo
+              </p>
+</div>
+</div>
+</div>
+<div class="n96 product-row-cos-2026-0399">
+<div class="n89 col-product">
+<img alt="Hình minh họa" class="n85" decoding="async" loading="lazy" src="../assets/img/ui/thumb-03.svg"/>
+<div class="n88 frame">
+<p class="n86">
+               Cosplay Arthur Pendragon - Fate/Grand Order
+              </p>
+<p class="n87">
+               COS-2026-0399
+              </p>
+</div>
+</div>
+<p class="n90">
+             Anime / Fate Series
+            </p>
+<p class="n91">
+             Hoàng Anh Tuấn
+            </p>
+<p class="n92">
+             320,000đ / ngày
+            </p>
+<div class="n95 frame">
+<div class="n94 status-badge badge badge-warn">
+<p class="n93">
+               Chờ kiểm duyệt
+              </p>
+</div>
+</div>
+</div>
+<div class="n108 product-row-cos-2026-0311">
+<div class="n101 col-product">
+<img alt="Hình minh họa" class="n97" decoding="async" loading="lazy" src="../assets/img/ui/thumb-04.svg"/>
+<div class="n100 frame">
+<p class="n98">
+               Cosplay Hatsune Miku Sakura Version
+              </p>
+<p class="n99">
+               COS-2026-0311
+              </p>
+</div>
+</div>
+<p class="n102">
+             Vocaloid / Miku
+            </p>
+<p class="n103">
+             Vũ Phương Ly
+            </p>
+<p class="n104">
+             180,000đ / ngày
+            </p>
+<div class="n107 frame">
+<div class="n106 status-badge badge badge-ok">
+<p class="n105">
+               Đang hoạt động
+              </p>
+</div>
+</div>
+</div>
+<div class="n120 product-row-cos-2026-0285">
+<div class="n113 col-product">
+<img alt="Hình minh họa" class="n109" decoding="async" loading="lazy" src="../assets/img/ui/thumb-05.svg"/>
+<div class="n112 frame">
+<p class="n110">
+               Cosplay Gojo Satoru Jujutsu Kaisen
+              </p>
+<p class="n111">
+               COS-2026-0285
+              </p>
+</div>
+</div>
+<p class="n114">
+             Anime / Jujutsu Kaisen
+            </p>
+<p class="n115">
+             Phạm Minh Đức
+            </p>
+<p class="n116">
+             120,000đ / ngày
+            </p>
+<div class="n119 frame">
+<div class="n118 status-badge badge badge-ok">
+<p class="n117">
+               Đang hoạt động
+              </p>
+</div>
+</div>
+</div>
+<div class="n132 product-row-cos-2026-0104">
+<div class="n125 col-product">
+<img alt="Hình minh họa" class="n121" decoding="async" loading="lazy" src="../assets/img/ui/thumb-06.svg"/>
+<div class="n124 frame">
+<p class="n122">
+               Cosplay Keqing Opulent Splendor - Genshin Impact
+              </p>
+<p class="n123">
+               COS-2026-0104
+              </p>
+</div>
+</div>
+<p class="n126">
+             Game / Genshin Impact
+            </p>
+<p class="n127">
+             Bùi Khánh Linh
+            </p>
+<p class="n128">
+             290,000đ / ngày
+            </p>
+<div class="n131 frame">
+<div class="n130 status-badge badge badge-neutral">
+<p class="n129">
+               Bị báo cáo
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class="table-hint">
+          Bảng có thể cuộn ngang trên màn hình nhỏ.
+         </p>
+</div>
+<div class="n177 right-section r-node r-col r-small-offset" style=";--r-offset:24px;">
+<div class="n144 selected-user-profile r-node r-col r-center" style=";--r-offset:24px;">
+<img alt="Ảnh minh họa trang phục và dịch vụ" class="n135 r-center" decoding="async" loading="lazy" src="../assets/img/admin/product-violation-preview.jpg" style=";--r-offset:106px;"/>
+<div class="n138 name-info r-node r-col">
+<p class="n136 r-text">
+            Cosplay Raiden Shogun - Genshin Impact
+           </p>
+<p class="n137 r-text r-center" style=";--r-offset:127.5px;">
+            ID: COS-2026-0412
+           </p>
+</div>
+<div class="n143 meta-pills r-node r-row r-center" style=";--r-offset:77px;">
+<div class="n140 frame r-node r-col">
+<p class="n139 r-text r-center" style=";--r-offset:8px;">
+             Game / Genshin Impact
+            </p>
+</div>
+<div class="n142 frame r-node r-col" style=";--r-offset:8px;">
+<p class="n141 r-text r-center" style=";--r-offset:8px;">
+             Bị báo cáo
+            </p>
+</div>
+</div>
+</div>
+<div class="n152 contact-details r-node r-col r-center" style=";--r-offset:24px;">
+<p class="n145 r-text">
+           Thông tin chi tiết
+          </p>
+<div class="n148 info-row r-node r-col">
+<p class="n146 r-text">
+            CHỦ SỞ HỮU
+           </p>
+<p class="n147 r-text">
+            Trần Thị Mai
+           </p>
+</div>
+<div class="n151 info-row r-node r-col">
+<p class="n149 r-text">
+            GIÁ THUÊ THAM KHẢO
+           </p>
+<p class="n150 r-text">
+            250,000đ / ngày
+           </p>
+</div>
+</div>
+<div class="n153 r-node r-visual r-center" style=";--r-offset:24px;">
+</div>
+<div class="n164 action-group r-node r-col r-center" style=";--r-offset:24px;">
+<p class="n154 r-text">
+           Nghiệp vụ kiểm duyệt
+          </p>
+<div class="n159 dual-actions r-node r-row">
+<button class="n156 btn-approve r-node r-col review-button" type="button">
+<p class="n155 r-text r-center" style=";--r-offset:58.5px;">
+             Phê duyệt
+            </p>
+</button>
+<button class="n158 btn-reject r-node r-col review-button danger" style=";--r-offset:10px;" type="button">
+<p class="n157 r-text r-center" style=";--r-offset:67.5px;">
+             Từ chối
+            </p>
+</button>
+</div>
+<button class="n161 btn-hide r-node r-col review-button" type="button">
+<p class="n160 r-text r-center" style=";--r-offset:119.5px;">
+            Ẩn sản phẩm tạm thời
+           </p>
+</button>
+<button class="n163 btn-delete r-node r-col review-button danger" data-open-dialog="delete-product-dialog" type="button">
+<p class="n162 r-text r-center" style=";--r-offset:116px;">
+            Xóa sản phẩm vi phạm
+           </p>
+</button>
+</div>
+<div class="n165 r-node r-visual r-center" style=";--r-offset:24px;">
+</div>
+<div class="n176 staff-logs r-node r-col r-center" style=";--r-offset:24px;">
+<p class="n166 r-text">
+           Lịch sử xử lý của staff
+          </p>
+<div class="n175 logs-container r-node r-col">
+<div class="n170 log-1 r-node r-col">
+<p class="n167 r-text" style=";--r-offset:10px;">
+             Staff Nguyễn Minh Anh
+            </p>
+<p class="n168 r-text r-center" style=";--r-offset:10px;">
+             Gắn cờ sản phẩm do có 3 báo cáo từ người dùng về ảnh sai lệch.
+            </p>
+<p class="n169 r-text" style=";--r-offset:10px;">
+             14:20 - 24/10/2026
+            </p>
+</div>
+<div class="n174 log-2 r-node r-col">
+<p class="n171 r-text" style=";--r-offset:10px;">
+             Hệ thống
+            </p>
+<p class="n172 r-text" style=";--r-offset:10px;">
+             Tự động tạm khóa hiển thị do đạt ngưỡng tối đa lượt báo cáo.
+            </p>
+<p class="n173 r-text" style=";--r-offset:10px;">
+             09:15 - 24/10/2026
+            </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<dialog aria-label="Xác nhận xóa sản phẩm" class="review-dialog" id="delete-product-dialog">
+<button class="review-button dialog-close" data-close-dialog="" type="button">
+      Đóng
+     </button>
+<div class="n212 confirmation-modal card r-node r-wide r-col r-card" style=";--r-offset:-4px;">
+<div class="n185 modal-header r-node r-row r-center" style=";--r-offset:28px;">
+<span class="n183 icon">
+<svg aria-hidden="true" class="ico" height="24" viewbox="0 0 24 24" width="24">
+<path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3">
+</path>
+<path d="M12 9v4">
+</path>
+<path d="M12 17h.01">
+</path>
+</svg>
+</span>
+<p class="n184 r-text" style=";--r-offset:12px;">
+        XÓA SẢN PHẨM VI PHẠM
+       </p>
+</div>
+<div class="n206 modal-body r-node r-col r-center" style=";--r-offset:28px;">
+<p class="n186 r-text">
+        Bạn đang thực hiện xóa sản phẩm Cosplay Raiden Shogun - Genshin Impact. Hành động này sẽ gỡ bỏ sản phẩm vĩnh viễn khỏi nền tảng. Vui lòng chọn lý do bắt buộc:
+       </p>
+<div class="n199 reasons-list r-node r-col">
+<div class="n189 reason-option-0 r-node r-row">
+<span class="n187 icon">
+<svg aria-hidden="true" class="ico" height="16" viewbox="0 0 24 24" width="16">
+<circle cx="12" cy="12" r="9">
+</circle>
+</svg>
+</span>
+<p class="n188 r-text" style=";--r-offset:10px;">
+          Hình ảnh không chính chủ / giả mạo nguồn
+         </p>
+</div>
+<div class="n192 reason-option-1 r-node r-row">
+<span class="n190 icon">
+<svg aria-hidden="true" class="ico" height="16" viewbox="0 0 24 24" width="16">
+<circle cx="12" cy="12" r="9">
+</circle>
+</svg>
+</span>
+<p class="n191 r-text" style=";--r-offset:10px;">
+          Hình ảnh nhạy cảm / Vi phạm thuần phong mỹ tục
+         </p>
+</div>
+<div class="n195 reason-option-2 r-node r-row">
+<span class="n193 icon">
+<svg aria-hidden="true" class="ico" height="16" viewbox="0 0 24 24" width="16">
+<circle cx="12" cy="12" r="9">
+</circle>
+</svg>
+</span>
+<p class="n194 r-text" style=";--r-offset:10px;">
+          Nghi ngờ lừa đảo / Giá thuê không thực tế
+         </p>
+</div>
+<div class="n198 reason-option-3 r-node r-row">
+<span class="n196 icon">
+<svg aria-hidden="true" class="ico" height="16" viewbox="0 0 24 24" width="16">
+<circle cx="12" cy="12" r="9">
+</circle>
+</svg>
+</span>
+<p class="n197 r-text" style=";--r-offset:10px;">
+          Sản phẩm bị rách hỏng nghiêm trọng, mất form dáng
+         </p>
+</div>
+</div>
+<div class="n205 custom-reason r-node r-col">
+<p class="n200 r-text">
+         GHI CHÚ CHI TIẾT BỔ SUNG
+        </p>
+<div class="n204 input-box card input r-node">
+<input aria-label="Nhập mô tả vi phạm cụ thể tại đây..." class="n203" id="field-2" name="field-2" placeholder="Nhập mô tả vi phạm cụ thể tại đây..." type="text"/>
+</div>
+</div>
+</div>
+<div class="n211 modal-actions r-node r-row r-center" style=";--r-offset:28px;">
+<button class="n208 confirm-btn btn btn-primary r-node r-col review-button primary danger" type="button">
+<p class="n207 r-text r-center" style=";--r-offset:61px;">
+         Xác nhận xóa
+        </p>
+</button>
+<button class="n210 cancel-btn btn btn-outline r-node r-col review-button" data-close-dialog="" style=";--r-offset:12px;" type="button">
+<p class="n209 r-text r-center" style=";--r-offset:81.5px;">
+         Hủy bỏ
+        </p>
+</button>
+</div>
+</div>
+</dialog>
+</div>
+</main>
+<button aria-label="Đóng" class="sidebar-overlay" tabindex="-1" type="button">
+</button>
+<script defer="True" src="../assets/js/ui.js">
+</script>
+<script defer="" src="../assets/js/messages.js"></script><script defer="" src="../assets/js/api-client.js"></script><script defer="" src="../assets/js/page-handlers.js"></script></body>
+</html>
